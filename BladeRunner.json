@@ -1,0 +1,41 @@
+{  
+    "Title":"Blade Runner",
+    "Year":1982,
+    "Released":"25 Jun 1982",
+    "Runtime":117,
+    "Genres":["Sci-Fi", "Thriller"],
+    "Director":{
+        "Name":"Ridley Scott"
+    },
+    "Writers":[
+        {"Name":"Hampton Fancher", "Type":"screenplay"},
+        {"Name":"David Webb Peoples", "Type":"screenplay"},
+        {"Name":"Philip K. Dick", "Type":"novel"}
+    ],
+    "Actors":[
+        {"Name":"Harrison Ford", "As":"Rick Deckard"},
+        {"Name":"Rutger Hauer", "As":"Roy Batty"},
+        {"Name":"Sean Young", "As":"Rachael"},
+        {"Name":"Edward James Olmos", "As":"Gaff"}
+    ],
+    "Plot":"A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.",
+    "Languages":["English", "German", "Cantonese", "Japanese", "Hungarian", "Arabic"],
+    "Countries":["USA", "Hong Kong"],
+    "Awards":"Nominated for 2 Oscars. Another 11 wins & 16 nominations.",
+    "Poster":"https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "Ratings":[
+        {
+            "Source":"Internet Movie Database",
+            "Value":"8.2/10",
+            "Votes":602079
+        },
+        {  
+            "Source":"Rotten Tomatoes",
+            "Value":"90%"
+        },
+        {  
+            "Source":"Metacritic",
+            "Value":"89/100"
+        }
+    ]
+}

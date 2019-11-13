@@ -1,0 +1,41 @@
+{  
+    "Title":"Batman",
+    "Year":1989,
+    "Released":"25 Jun 1982",
+    "Runtime":126,
+    "Genres":["Action", "Thriller"],
+    "Director":{
+        "Name":"Tim Burton"
+    },
+    "Writers":[
+        {"Name":"Hampton Fancher", "Type":"screenplay"},
+        {"Name":"David Webb Peoples", "Type":"screenplay"},
+        {"Name":"Philip K. Dick", "Type":"novel"}
+    ],
+    "Actors":[
+        {"Name":"Michael Kaetom", "As":"Batman"},
+        {"Name":"Jack Nicholson", "As":"Joker"},
+        {"Name":"Kim Basinger", "As":"Vicki Vale"},
+        {"Name":"Michael Gough", "As":"Alfred"}
+    ],
+    "Plot":"A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.",
+    "Languages":["English", "German", "Cantonese", "Japanese", "Hungarian", "Arabic"],
+    "Countries":["USA", "Hong Kong"],
+    "Awards":"Nominated for 2 Oscars. Another 11 wins & 16 nominations.",
+    "Poster":"https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "Ratings":[
+        {
+            "Source":"Internet Movie Database",
+            "Value":"7.5/10",
+            "Votes":602079
+        },
+        {  
+            "Source":"Rotten Tomatoes",
+            "Value":"90%"
+        },
+        {  
+            "Source":"Metacritic",
+            "Value":"89/100"
+        }
+    ]
+}
