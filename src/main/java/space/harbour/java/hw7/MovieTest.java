@@ -58,29 +58,43 @@ class MovieTest {
     }
 
     @Test
-    void filterByGenre() {
+    void filterByDirector() {
         Set<String> director_names = new HashSet<>();
         director_names.add(movies.get(0).director.name);
         director_names.add(movies.get(1).director.name);
         director_names.add(movies.get(2).director.name);
 
         List<Movie> filtered_movies = movies.stream()
-                .filter(m -> m.director.name == director_names.toArray()[0])
+                .filter(m -> m.director.name == (String)director_names.toArray()[0])
                 .collect(Collectors.toList());
         Assertions.assertTrue(filtered_movies.size() == 1);
     }
 
     @Test
     void filterByActors() {
-        Set<String> actors_names = new HashSet<>();
+        Set<Movie.Actor> actors = new HashSet<>();
         for (int i = 0; i < movies.get(0).actors.size(); i++) {
-            actors_names.add(movies.get(0).actors.get(i).name);
+            actors.add(movies.get(0).actors.get(i));
         }
 
-        List<Movie.Actor> filtered_movies = movies.stream()
-                .map(m -> m.actors)
-                .collect(Collectors.toList()).get(0).stream()
-                .filter(actor -> actor.name == actors_names.toArray()[0])
+        List<Movie> filtered_movies = movies.stream()
+                .filter(m -> m.actors.contains((Movie.Actor)actors.toArray()[0]))
+                .collect(Collectors.toList());
+
+        Assertions.assertTrue(filtered_movies.size() == 1);
+    }
+
+    @Test
+    void filterByGenre() {
+        Set<String> genre_names = new HashSet<>();
+        for (int i = 0; i < movies.get(0).genres.size(); i++) {
+            genre_names.add(movies.get(0).genres.get(i));
+        }
+
+        String genre = genre_names.toArray()[0].toString();
+
+        List<Movie> filtered_movies = movies.stream()
+                .filter(m -> m.genres.contains(genre))
                 .collect(Collectors.toList());
 
         Assertions.assertTrue(filtered_movies.size() == 1);
